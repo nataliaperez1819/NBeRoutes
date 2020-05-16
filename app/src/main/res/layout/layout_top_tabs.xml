@@ -1,0 +1,50 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.tabs.TabLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tabs"
+                android:background="@android:color/holo_blue_bright"/>
+
+            <com.google.android.material.navigation.NavigationView
+                android:id="@+id/navigationView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/holo_blue_bright">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="45dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="left|center_vertical"
+                    android:background="@drawable/ic_backarrow"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingVertical="8dp"
+                    android:src="@drawable/logo_negro_be_route" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical|end"
+                    android:background="@drawable/small_image_profile"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/small_image_profile"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginEnd="8dp"/>
+            </com.google.android.material.navigation.NavigationView>
+        </com.google.android.material.appbar.AppBarLayout>
+    </RelativeLayout>
+</merge>
